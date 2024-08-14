@@ -1,0 +1,332 @@
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        border: 1px solid #444;
+    }
+
+    #nav-list.show {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+/* Tablet and Small Devices Styles (min-device-width: 52px and max-device-width: 1024px) */
+@media only screen and (min-device-width: 52px) and (max-device-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .icon-link i {
+        font-size: 15px;
+    }
+
+    .pg_1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pg_1_img img {
+        max-width: 50%;
+        height: 5%;
+        margin: 15% 25% 1% 25%;
+        border-radius: 50%;
+        float: none;
+    }
+
+    .pg_1_text {
+        max-width: 50%;
+        height: 10%;
+        text-align: center;
+        margin: 0% 25% 15% 25%;
+        margin-bottom: 2px;
+        float: none;
+        border: none;
+    }
+
+    .icon-links {
+        margin: 0%;
+        border-radius: 50%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .pg_2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pg_2_img img {
+        max-width: 50%;
+        height: 5%;
+        margin: 5% 25% 1% 25%;
+        border-radius: 50%;
+        float: none;
+        background-color: var(--themeColor);
+    }
+
+    .pg_2_text {
+        max-width: 80%;
+        height: 10%;
+        text-align: center;
+        margin: 2% 5% 5% 5%;
+        float: none;
+        border: none;
+    }
+
+    .pg_2_text h3 {
+        text-align: center;
+    }
+
+    .pg_2_text p {
+        text-align: center;
+        background-color: var(--themeColor);
+    }
+
+    .pg_2_text b {
+        background-color: var(--themeColor);
+    }
+
+    .pg_2_text_1 {
+        max-width: 80%;
+        height: 10%;
+        text-align: center;
+        float: none;
+        border: none;
+        display: inline-block;
+    }
+
+    .All_skill_1 {
+        width: 50%;
+        margin: 5% 25% 0% 20%;
+        float: none;
+    }
+
+    .All_skill_1 h1 {
+        margin: 5% 0% 0% 0%;
+    }
+
+    .All_skill {
+        height: 100%;
+    }
+
+    .pg_5 {
+        height: 100%;
+    }
+
+    .pg_5_1 {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+        text-align: center;
+    }
+
+    .pg_5_all {
+        width: 100%;
+        height: auto;
+        margin: 5% 0% 0% 0%;
+        padding: 0%;
+    }
+
+    .pg_4 {
+        height: 100%;
+    }
+
+    .pg_4_Education {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+        text-align: center;
+    }
+
+    .pg_4_Ed_1 {
+        width: 100%;
+        height: auto;
+        margin: 5% 0% 0% 0%;
+        padding: 0%;
+    }
+
+    .login {
+        height: auto;
+        width: 80%;
+        margin: 5% 5% 5% 5%;
+        padding: 0%;
+    }
+
+    .login h1 {
+        width: 50%;
+        margin: 5% 25% 5% 25%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        padding: 2% 5% 2% 5%;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+    button {
+        width: 50%;
+        margin: 5% 25% 5% 25%;
+        font-size: large;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .port-row {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        grid-gap: 20px;
+        /* Smaller gap between items */
+    }
+
+    /* Adjust padding and text alignment for the project section */
+    #Project {
+        padding: 50px 20px;
+    }
+
+    #Project h1 {
+        font-size: 24px;
+        /* Smaller font size for the title */
+        text-align: center;
+    }
+
+    /* Adjust portfolio items */
+    .port-item {
+        margin: 0 auto;
+        /* Center items */
+        width: 90%;
+        /* Reduce width for better fit */
+    }
+
+    /* Adjust portfolio info */
+    .port-info {
+        padding: 10px;
+        /* Smaller padding */
+        gap: 5px;
+        /* Reduce gap between elements */
+    }
+
+    .port-info h4 {
+        font-size: 20px;
+        /* Smaller font size */
+    }
+
+    .port-info h4+p {
+        font-size: 12px;
+        /* Smaller font size */
+    }
+
+    /* Adjust icon size */
+    .port-info a {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+/* 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    footer {
+        width: 50%;
+    } */
+
+}
+
+/* Large Screens Styles (min-device-width: 1025px and max-device-width: 1440px) */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+    .pg_1 {
+        width: 100%;
+        background-color: var(--bgcolor);
+    }
+
+    .pg_1_img img {
+        max-width: 40%;
+        height: 25%;
+        float: right;
+        margin: 5% 5% 5% 0%;
+    }
+
+    .pg_1_text {
+        max-width: 40%;
+        height: 25%;
+        float: left;
+        margin: 25% 5% 5% 5%;
+    }
+
+    .pg_2 {
+        width: 100%;
+        background-color: var(--themeColor);
+        margin: 5% 0% 5% 0%;
+        height: 800px;
+    }
+
+    .pg_2_img img {
+        max-width: 40%;
+        height: 25%;
+        float: left;
+        margin: 5% 0% 5% 5%;
+    }
+
+    .pg_2_text {
+        margin: 15% 3% 0% 0%;
+        width: 50%;
+        height: 10%;
+        float: right;
+    }
+
+    .pg_2_text_1 {
+        margin: 0% 0% 0% 0%;
+        width: 50%;
+    }
+
+    .All_skill_1 {
+        width: 35%;
+        margin: 5% 5% 5% 5%;
+    }
+
+    .pg_4_Education {
+        width: 35%;
+        margin: 5% 5% 0% 5%;
+        text-align: center;
+    }
+
+    .pg_4_Ed_1 {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+    }
+    .footer-section button{
+        margin-left: 0px;
+    }
+}

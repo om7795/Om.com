@@ -1,0 +1,598 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgcolor);
+    color: var(--textColor);
+}
+
+/* CSS Variables */
+:root {
+    --sideBGColor: #3b3939;
+    --themeColor: #1a1a1a;
+    --iconBColor: #ffbf35;
+    --textColor: #fff;
+    --bgcolor: #000;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--themeColor);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    background-color: var(--themeColor);
+}
+
+nav {
+    position: relative;
+}
+
+#nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+#nav-list li a {
+    color: var(--textColor);
+    background-color: var(--themeColor);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--themeColor);
+}
+
+
+
+/* Menu Toggle Button for Responsive Design */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Page 1 Styles */
+.pg_1 {
+    height: 700px;
+    background-color: var(--bgcolor);
+}
+
+.pg_1_img img {
+    height: 600px;
+    width: 500px;
+    margin: 50px 75px 50px 75px;
+    border: 0.1px solid var(--textColor);
+    float: right;
+}
+
+.pg_1_text {
+    height: 200px;
+    width: 500px;
+    margin: 250px 75px 250px 75px;
+    float: left;
+}
+
+.pg_1_text h6 {
+    color: var(--iconBColor);
+    margin: 16px 0px 8px 25px;
+}
+
+.pg_1_text h2 {
+    color: #fff;
+    margin: 8px 0px 8px 25px;
+}
+
+.pg_1_text p {
+    color: #fff;
+    margin: 8px 0px 16px 25px;
+}
+
+/* Social Media Icon Links */
+.icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 205px 0px 0px;
+}
+
+.icon-link {
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #ffbf35;
+    color: #ffbf35;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
+}
+
+.icon-link i {
+    font-size: 17px;
+}
+
+.icon-link:hover {
+    background-color: #ffbf35;
+    color: #000;
+}
+
+/* Page 2 Styles */
+.pg_2 {
+    height: 700px;
+    background-color: var(--themeColor);
+}
+
+.pg_2_img img {
+    height: 600px;
+    width: 500px;
+    margin: 50px 75px 50px 75px;
+    border: 0.1px solid var(--textColor);
+    float: left;
+    background-color: var(--themeColor);
+}
+
+.pg_2_text {
+    height: 400px;
+    width: 700px;
+    margin: 150px 50px 150px 20px;
+    float: right;
+    color: var(--textColor);
+    background-color: var(--themeColor);
+}
+
+.pg_2_text h1 {
+    text-align: center;
+    color: var(--iconBColor);
+    margin: 25px 0px 0px 0px;
+    background-color: var(--themeColor);
+}
+
+.pg_2_text h3 {
+    text-align: left;
+    background-color: var(--themeColor);
+    margin: 15px 0px 0px 15px;
+}
+
+.pg_2_text p {
+    text-align: left;
+    margin: 15px 0px 0px 15px;
+    background-color: var(--themeColor);
+}
+
+.pg_2_text_1 {
+    height: 200px;
+    width: 250px;
+    float: left;
+    margin: 25px 0px 0px 15px;
+    background-color: var(--themeColor);
+}
+
+/* Skill Section Styles */
+.All_skill {
+    text-align: center;
+    color: var(--iconBColor);
+    background-color: var(--bgcolor);
+    margin: 25px 0px 0px 0px;
+    height: 550px;
+}
+
+.All_skill h1 {
+    color: var(--iconBColor);
+    background-color: var(--bgcolor);
+}
+
+.All_skill_1 {
+    height: 425px;
+    width: 500px;
+    border: 2px solid var(--bgcolor);
+    margin: 25px 25px 0px 150px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--themeColor);
+    color: var(--textColor);
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: left;
+}
+
+.All_skill_2 {
+    height: 425px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 25px 150px 0px 25px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--themeColor);
+    color: var(--textColor);
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    text-align: left;
+}
+
+#skill {
+    padding: 70px 30px;
+}
+
+#skill .skill-row {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#skill .skill-row .skill-box .skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+#skill .skill-row .skill-box .skill-info h2 {
+    color: var(--iconBColor);
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.skill-outter-liner {
+    background-color: var(--textColor);
+    border-radius: 25px;
+}
+
+#skill .skill-row .skill-box .skill-outter-line {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.skill-inner-line {
+    height: 10px;
+    background-color: var(--iconBColor);
+    border-radius: 20px;
+}
+
+.skill-info {
+    margin: 25px 0px 0px 0px;
+}
+
+.skill-info h2 {
+    padding: 5px 0px 0px 0px;
+    background-color: var(--themeColor);
+}
+
+/* Education Section Styles */
+.pg_4 {
+    height: 450px;
+    background-color: var(--bgcolor);
+    margin-top: 50px;
+}
+
+.pg_4_Education {
+    width: 500px;
+    height: 350px;
+    margin: 25px 50px 25px 100px;
+    background-color: var(--bgcolor);
+    display: inline-block;
+}
+
+.pg_4_Education h1 {
+    text-align: center;
+    color: var(--iconBColor);
+    background-color: var(--bgcolor);
+    margin-top: 25px;
+}
+
+.pg_4_Ed_1 {
+    height: 125px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 15px 50px 15px 50px;
+    background-color: var(--sideBGColor);
+}
+
+.pg_4_Ed_1 h3 {
+    color: var(--textColor);
+    background-color: var(--sideBGColor);
+    margin: 5px 0px 5px 15px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.pg_4_Ed_1 h6 {
+    color: var(--iconBColor);
+    background-color: var(--sideBGColor);
+    margin: 5px 0px 5px 15px;
+    text-align: left;
+}
+
+.pg_4_Ed_1 p {
+    color: var(--textColor);
+    background-color: var(--sideBGColor);
+    margin: 5px 0px 5px 15px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+/* Services Section Styles */
+.pg_5 {
+    height: 700px;
+    background-color: var(--themeColor);
+    margin-top: 50px;
+}
+
+.pg_5 h1 {
+    text-align: center;
+    color: var(--iconBColor);
+    background-color: var(--themeColor);
+}
+
+.pg_5_1 {
+    width: 500px;
+    height: 400px;
+    margin: 25px 50px 25px 100px;
+    background-color: var(--themeColor);
+    display: inline-block;
+}
+
+.pg_5_all {
+    height: 150px;
+    width: 400px;
+    margin: 25px 15px 15px 25px;
+    background-color: var(--sideBGColor);
+}
+
+.pg_5_all i {
+    color: var(--iconBColor);
+    background-color: var(--sideBGColor);
+    font-size: 50px;
+    float: left;
+    padding: 15px 0px 0px 15px;
+}
+
+.pg_5_all h3 {
+    background-color: var(--sideBGColor);
+    color: var(--textColor);
+    padding: 30px 0px 0px 75px;
+}
+
+.pg_5_all p {
+    color: var(--textColor);
+    background-color: var(--sideBGColor);
+    margin: 20px 0px 0px 15px;
+    padding-bottom: 15px;
+}
+
+/* Login Form Styles */
+.login {
+    background-color: var(--bgcolor);
+    color: #fff;
+    height: 600px;
+    width: 1000px;
+    margin: 25px 200px 25px 200px;
+    padding: 25px 50px 25px 50px;
+}
+
+.login h1 {
+    background-color: var(--bgcolor);
+    color: var(--iconBColor);
+    text-align: center;
+    margin: 15px;
+}
+
+/* Form Elements */
+input,
+textarea {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    margin: 15px;
+    font-size: 18px;
+    background-color: var(--textColor);
+    color: var(--bgcolor);
+    border-radius: 15px;
+}
+/* Button Styles */
+button {
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--iconBColor);
+    color: var(--bgcolor);
+    margin: 15px 15px 15px 475px;
+}
+
+/* Project Section Styles */
+#Project {
+    padding: 70px 30px;
+}
+
+/* Project Section Heading Styles */
+#Project h1 {
+    background-color: var(--bgcolor);
+    color: var(--iconBColor);
+    text-align: center;
+}
+
+/* Portfolio Row Styles */
+.port-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+/* Portfolio Item Styles */
+.port-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Portfolio Image Styles */
+.port-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Portfolio Information Overlay Styles */
+.port-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background-color: var(--sideBGColor);
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0.4;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+/* Show Portfolio Information on Hover */
+.port-item:hover .port-info {
+    transform: scale(1);
+    visibility: visible;
+}
+
+/* Portfolio Title Styles */
+.port-info h4 {
+    color: var(--textColor);
+    background-color: var(--sideBGColor);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Portfolio Description Styles */
+.port-info h4+p {
+    color: var(--textColor);
+    background-color: var(--sideBGColor);
+    font-size: 14px;
+}
+
+/* Portfolio Link Styles */
+.port-info a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--iconBColor);
+    background-color: var(--iconBColor);
+    line-height: 46px;
+    transition: 0.4s;
+}
+
+/* Portfolio Link Hover Effect */
+.port-info a:hover {
+    background-color: #ffbf36;
+}
+
+/* <!-- Footer Section --> */
+footer {
+    background-color: var(--sideBGColor);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--sideBGColor);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    background-color: var(--sideBGColor);
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--iconBColor);
+    background-color: var(--sideBGColor);
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: var(--sideBGColor);
+}
+
+.footer-section a {
+    color: var(--textColor);
+    text-decoration: none;
+    background-color: var(--sideBGColor);
+}
+.footer-section li{
+    background-color: var(--sideBGColor);
+}
+.footer-section button{
+    margin-left: 0px;
+    text-align: center;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+    background-color: var(--sideBGColor);
+}
+
+button {
+    background-color: var(--iconBColor);
+    color: var(--sideBGColor);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--textColor);
+    color: var(--bgcolor);
+}
