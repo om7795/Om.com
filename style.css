@@ -64,6 +64,16 @@ nav {
 }
 
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background-color: var(--bgcolor);
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
 
 /* Menu Toggle Button for Responsive Design */
 .menu-toggle {
