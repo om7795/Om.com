@@ -28,6 +28,8 @@
 
     .icon-link i {
         font-size: 15px;
+        border-radius: 50%;
+        width: 50px;
     }
 
     .pg_1 {
