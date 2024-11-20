@@ -102,6 +102,7 @@ nav {
     margin: 50px 75px 50px 75px;
     border: 0.1px solid var(--textColor);
     float: right;
+    border-radius: 50px;
 }
 
 .pg_1_text {
@@ -169,6 +170,7 @@ nav {
     height: 600px;
     width: 500px;
     margin: 50px 75px 50px 75px;
+    border-radius: 50px;
     border: 0.1px solid var(--textColor);
     float: left;
     background-color: var(--themeColor);
@@ -365,6 +367,7 @@ nav {
     text-align: center;
     color: var(--iconBColor);
     background-color: var(--themeColor);
+    padding-top: 50px;
 }
 
 .pg_5_1 {
@@ -401,6 +404,13 @@ nav {
     background-color: var(--sideBGColor);
     margin: 20px 0px 0px 15px;
     padding-bottom: 15px;
+}
+#Contacts_services{
+    margin-top: 0px;
+    margin-left: 15px;
+    color: var(--iconBColor);
+    background-color: var(--sideBGColor);
+    text-decoration: none;
 }
 
 /* Login Form Styles */
@@ -521,26 +531,26 @@ button {
 /* Portfolio Link Styles */
 .port-info a {
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-    width: 45px;
+    width: 250px;
     height: 45px;
-    border-radius: 50%;
+    border-radius: 25px 25px 25px 25px;
     color: var(--iconBColor);
     background-color: var(--iconBColor);
     line-height: 46px;
     transition: 0.4s;
+    display: block;
 }
 
 /* Portfolio Link Hover Effect */
 .port-info a:hover {
-    background-color: #ffbf36;
+    background-color: var(--themeColor);
 }
 
 /* <!-- Footer Section --> */
 footer {
     background-color: var(--sideBGColor);
-    color: #fff;
+    color: var(--textColor);
     padding: 20px 0;
 }
 
